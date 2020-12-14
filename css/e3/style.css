@@ -1,0 +1,33 @@
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body p{
+    color: white;
+}
+
+body #poem{
+    background-image: url(pic.jpg);
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+    background-size: 100% 100%;
+    text-align: center;
+    border:1px solid;
+    margin: 0 auto 0 auto;
+}
+
+body #poem .head{
+    font-size: 32px;
+    margin-top: 200px;
+}
+
+body #poem .author{
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+
+body #poem .p{
+    font-size: 24px;
+}

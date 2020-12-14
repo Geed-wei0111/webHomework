@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.ui{
+    list-style: none;
+    display: inline-block;
+    background-color: lightseagreen;
+    height: 50px;
+}
+
+.ui li{
+    margin: 10px;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.ui li a{
+    width:70px;
+    height:50px;
+    padding:0 20px;
+    font-size: 24px;
+    line-height:40px;
+    background-color: lightslategrey;
+}
+
+.pic1{
+    display: inline-block;
+    width: 400px;
+    height: 320px;
+}
