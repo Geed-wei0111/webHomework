@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formJs.js"></script>
+</head>
+<body>
+    <form>
+        <table align="center" border="1" cellspacing="0">
+            <tr>
+                <td>名字:</td>
+                <td><input type="text" id="name" placeholder="不能为空,只能为字母" onblur="username()"/></td>
+                <td id="tip_name"></td>
+            </tr>
+
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input type="radio" name="sex" checked="checked"/>男
+                    <input type="radio" name="sex"/>女
+                </td>
+            </tr>
+
+            <tr>
+                <td>年龄:</td>
+                <td><input type="text" id="age" maxlength="5" placeholder="不能为空,在0~100之间" onblur="userage()"/></td>
+                <td id="tip_age"></td>
+            </tr>
+
+            <tr>
+                <td>个人密码:</td>
+                <td><input type="password" id="password" placeholder="不能为空,4~10位数" maxlength="10" onblur="userpassword()"/></td>
+                <td id="tip_password"></td>
+            </tr>
+
+            <tr>
+                <td>确认密码:</td>
+                <td><input type="password" id="confirm_password" maxlength="10" onblur="confirmpassword()"/></td>
+                <td id="tip_confirm_password"></td>
+            </tr>
+
+            <tr>
+                <td>你的爱好:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="游泳"/>游泳
+                    <input type="checkbox" name="hobby" value="看书"/>看书
+                    <input type="checkbox" name="hobby" value="跑步"/>跑步
+                    <input type="checkbox" name="hobby" value="打游戏"/>打游戏
+                </td>
+            </tr>
+
+            <tr>
+                <td>你最喜欢的颜色:</td>
+                <td>
+                    <select>
+                        <option selected="selected">红色</option>
+                        <option>黑色</option>
+                        <option>蓝色</option>
+                        <option>黄色</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>个人介绍:</td>
+                <td>
+                    <textarea rows="10" cols="200" id="self-evaluation" onblur="selfevaluation()"></textarea>
+                </td>
+                <td id="tip_self-evaluation"></td>
+            </tr>
+
+            <tr>
+                <td><input type="reset" value="重置"/></td>
+                <td><button type="button">确定</button></td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
