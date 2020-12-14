@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="test" align="center">
+    <h1>Register</h1>
+    <form method="POST" action="zhuce.jsp">
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            User:</label><input type="text" name="user"><br>
+        <label>Password:</label><input type="password" name="password"><br>
+        <label>Ensure Password:</label><input type="password" name="ensure"><br>
+        <label>Birthday:</label><input type="text" name="birthday"><br>
+        <label>Height:</label><input type="text" name="height"><br>
+        <label>Email:</label><input type="text" name="mail"><br>
+        <label>Profession:</label><input type="radio" name="worker">工人<input type="radio" name="student">学生
+                                  <input type="radio" name="army">军人<input type="radio" name="farmer">农民<br>
+        <label>Home:</label>
+        <select name="loc">
+            <option value="DL">大连</option>
+            <option value="GX">广西</option>
+            <option value="BJ">北京</option>
+        </select><br>
+        <label>Hobbies:</label><input type="checkbox" name="hobby" value="music">音乐
+                                <input type="checkbox" name="hobby" value="draw">绘画
+                                <input type="checkbox" name="hobby" value="read">阅读<br>
+        <label>Input your words:</label>
+        <textarea name="words" style="width: 200px; height: 100px;">Here!</textarea><br>
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
